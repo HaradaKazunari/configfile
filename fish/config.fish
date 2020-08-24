@@ -23,11 +23,6 @@ alias win 'tmux split-window -d -p 30'
 set GHQ_SELECTOR peco
 
 function setup
-  git clone https://github.com/HaradaKazunari/configfile.git
-  cd configfile/
-  mv vimrc/.vimrc ~/
-  mv fish/config.fish ~/.config/fish/
-  mv tmux/.tmux.conf ~/
   curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-  fisher add oh-my-fish/theme-bobthefish && fisher add jethrokuan/z && fisher add decors/fish-ghq && fisher add 0rax/fish-bd && fisher add fishpkg/fish-spin && fisher add oh-my-fish/plugin-balias && fisher add oh-my-fish/plugin-expand && fisher add oh-my-fish/plugin-peco && fisher add simnalamburt/shellder
+  fisher add jethrokuan/z && fisher add decors/fish-ghq && fisher add 0rax/fish-bd && fisher add fishpkg/fish-spin && fisher add oh-my-fish/plugin-balias && fisher add oh-my-fish/plugin-expand && fisher add oh-my-fish/plugin-peco && fisher add simnalamburt/shellder
 end
