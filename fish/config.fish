@@ -3,22 +3,22 @@ function fish_user_key_bindings
   bind \c] peco_select_ghq_repository
 end
 
-alias gg 'ghq get'
-alias gi 'git init'
-alias ga 'git add'
-alias gc 'git commit -m'
-alias gp 'git push'
-alias gs 'git status'
-alias gb 'git branch'
-alias gco 'git checkout'
-alias gr 'git remote'
-alias gra 'git remote add origin'
+abbr -a gg ghq get
+abbr -a gi git init
+abbr -a ga git add
+abbr -a gc git commit -m
+abbr -a gp git push
+abbr -a gs git status
+abbr -a gb git branch
+abbr -a gco git checkout
+abbr -a gr git remote
+abbr -a gra git remote add origin
 
-alias hl 'heroku login'
-alias hp 'git push heroku master'
-alias ho 'heroku open'
+abbr -a hl heroku login
+abbr -a hp git push heroku master
+abbr -a ho heroku open
 
-alias win 'tmux split-window -d -p 30'
+abbr -a win tmux split-window -d -p 30
 
 set GHQ_SELECTOR peco
 
