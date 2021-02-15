@@ -117,18 +117,22 @@ Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'epilande/vim-react-snippets'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'simeji/winresizer'
 
 call vundle#end()
 filetype plugin indent on
 
 "　その他のカスタム設定を以下に書く
-
 let g:airline_theme = 'bubblegum'
+let g:winresizer_start_key = '<C-Q>'
 
 let g:user_emmet_settings = {
 \  'variables' : {
 \    'lang' : "ja"
-\  },
+\    },
+\
 \  'html' : {
 \    'indentation' : '  ',
 \    'snippets' : {
@@ -140,7 +144,7 @@ let g:user_emmet_settings = {
 \        ."\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
 \        ."\t<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">\n"
 \        ."\t<title></title>\n"
-\        ."\t<link rel=\"stylesheet\" href=\"css/style.css\"\n"
+\        ."\t<link rel=\"stylesheet\" href=\"css/style.css\">\n"
 \        ."</head>\n"
 \        ."<body>\n\n\n"
 \        ."\t${child}\n"
